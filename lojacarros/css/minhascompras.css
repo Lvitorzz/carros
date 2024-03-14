@@ -1,0 +1,61 @@
+:root {
+    --azul-base: #004080;
+  
+    --azul-fonte:#004080;
+    --fonte:#ffffff;
+    --gray: #e0e0e0;
+  }
+  
+  .cabecalho {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--azul-base);
+    height: 5em;
+  }
+  
+  .marca-titulo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color:var(--fonte) ;
+  }
+  
+  .navegacao-cadastro, .navegacao-login, .navegacao-compras, .navegacao-informacoes, .navegacao-sair, .navegacao-administracao {
+    text-decoration: none;
+    margin: 1em;
+    padding: 0.5rem;
+    font-size: 1em;
+    color: var(--fonte);
+  }
+  .navegacao-cadastro:hover, .navegacao-login:hover, .navegacao-compras:hover, .navegacao-informacoes:hover, .navegacao-sair:hover, .navegacao-administracao:hover{
+    background-color: white;
+    color: var(--azul-fonte);
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+  }
+
+  .txt{
+    margin: 25px;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

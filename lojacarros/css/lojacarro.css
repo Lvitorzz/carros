@@ -1,0 +1,92 @@
+:root {
+  --azul-base: #004080;
+
+  --azul-fonte:#004080;
+  --fonte:#ffffff;
+  --gray: #e0e0e0;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--azul-base);
+  height: 5em;
+}
+
+.marca-titulo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color:var(--fonte) ;
+}
+
+.navegacao-cadastro, .navegacao-login, .navegacao-compras, .navegacao-informacoes, .navegacao-sair, .navegacao-administracao {
+  text-decoration: none;
+  margin: 1em;
+  padding: 0.5rem;
+  font-size: 1em;
+  color: var(--fonte);
+}
+.navegacao-cadastro:hover, .navegacao-login:hover, .navegacao-compras:hover, .navegacao-informacoes:hover, .navegacao-sair:hover, .navegacao-administracao:hover{
+  background-color: white;
+  color: var(--azul-fonte);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+h1{
+  font-size: 2em;
+  margin: 25px;
+}
+
+.cards-mais-comprados {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+  .card img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .card-info {
+    padding: 10px;
+  }
+  
+  .card h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .card p {
+    margin: 5px 0;
+  }
+
+  .card-comprar{
+    margin-top: 20px;
+  }
+
+  .card a {
+    text-decoration: none;
+    background-color: #004080;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+  }
+
+  .card a:hover {
+    background-color: #002c59;
+  }

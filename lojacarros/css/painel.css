@@ -1,0 +1,112 @@
+:root {
+    --azul-base: #004080;
+  
+    --azul-fonte:#004080;
+    --fonte:#ffffff;
+    --gray: #e0e0e0;
+  }
+  
+  .cabecalho {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--azul-base);
+    height: 5em;
+  }
+  
+  .marca-titulo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color:var(--fonte) ;
+  }
+  
+  .navegacao-cadastro, .navegacao-login, .navegacao-compras, .navegacao-informacoes, .navegacao-sair, .navegacao-administracao {
+    text-decoration: none;
+    margin: 1em;
+    padding: 0.5rem;
+    font-size: 1em;
+    color: var(--fonte);
+  }
+  .navegacao-cadastro:hover, .navegacao-login:hover, .navegacao-compras:hover, .navegacao-informacoes:hover, .navegacao-sair:hover, .navegacao-administracao:hover{
+    background-color: white;
+    color: var(--azul-fonte);
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+  }
+
+.txt-painel{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.tabelas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button{
+    background-color: #004080;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.excluir{
+    background-color: red;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

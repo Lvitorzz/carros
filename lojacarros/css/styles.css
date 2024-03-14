@@ -1,0 +1,160 @@
+main{
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+/*Cores*/
+:root {
+    --azul-base: #004080;
+
+    --azul-fonte:#004080;
+    --fonte:#ffffff;
+    --gray: #e0e0e0;
+  }
+
+
+/* Estilos para o cabeçalho */
+
+/* Centralizar e estilizar o conteúdo do cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--azul-base);
+    height: 5em;
+}
+
+/* Estilizar o título da marca */
+.marca-titulo {
+    font-size: 1.5em; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color:var(--fonte) ;
+}
+
+/* Estilizar os links de navegação */
+.navegacao-cadastro, .navegacao-login, .navegacao-compras, .navegacao-informacoes, .navegacao-sair, .navegacao-administracao {
+    text-decoration: none; /* Remover sublinhado padrão */
+    margin: 1em;
+    padding: 0.5rem;
+    font-size: 1em; /* Tamanho da fonte */
+    color: var(--fonte);
+}
+.navegacao-cadastro:hover, .navegacao-login:hover, .navegacao-compras:hover, .navegacao-informacoes:hover, .navegacao-sair:hover, .navegacao-administracao:hover{
+    background-color: white; /* Fundo branco */
+    color: var(--azul-fonte); /* Cor do texto alterada */
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+/**DESTAQUE*/
+.destaque{
+  margin: 2rem;
+}
+
+.destaque-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Adicionando alinhamento vertical */
+  margin-bottom: 20px; /* Adicionando margem inferior para separar os cards */
+}
+
+.destaque-card-textos {
+  width: 50%; /* Definindo a largura para ocupar metade do container */
+  padding: 20px; /* Adicionando um espaçamento interno */
+}
+
+.destaque-card-imgs {
+  width: 50%; /* Definindo a largura para ocupar metade do container */
+  padding: 20px; /* Adicionando um espaçamento interno */
+}
+
+.destaque-card-imgs img {
+  width: 100%; /* Garantindo que a imagem ocupe todo o espaço disponível */
+}
+.destaque-card-titulo{
+  font-size: 3rem;
+
+}
+.destaque-card-paragrafo{
+  font-size: 1.5rem;
+}
+
+.mais-carros{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.mais-carros h1{
+  text-align: center;
+}
+
+.mais-carros .botao{
+  display: flex;
+  justify-content: end;
+  margin-left: 300px;
+  width: 50%;
+}
+
+.botao button{
+    background-color: #004080;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200%;
+    font-weight: bold;
+}
+
+.cards-mais-comprados {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-info {
+  padding: 10px;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+.sobre-a-empresa{
+  padding: 20px;
+  background-color: #141414;
+}
+
+.sobre-a-empresa-card{
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+}

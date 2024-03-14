@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --azul-base: #004080;
+  
+    --azul-fonte:#004080;
+    --fonte:#ffffff;
+    --gray: #e0e0e0;
+  }
+  
+  .cabecalho {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--azul-base);
+    height: 5em;
+    margin-bottom: 20px;
+  }
+  
+  .marca-titulo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color:var(--fonte) ;
+  }
+  
+  .navegacao-cadastro, .navegacao-login, .navegacao-compras, .navegacao-informacoes, .navegacao-sair, .navegacao-administracao {
+    text-decoration: none;
+    margin: 1em;
+    padding: 0.5rem;
+    font-size: 1em;
+    color: var(--fonte);
+  }
+  .navegacao-cadastro:hover, .navegacao-login:hover, .navegacao-compras:hover, .navegacao-informacoes:hover, .navegacao-sair:hover, .navegacao-administracao:hover{
+    background-color: white;
+    color: var(--azul-fonte);
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+  }
+
+.marca-titulo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color:var(--fonte) ;
+}
+
+.card, h1 {
+    display: flex;
+    margin-left: 60px;
+}
+
+.card img {
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.card-info {
+    flex-grow: 1;
+}
+
+.card-info form {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.card-info label {
+    margin-bottom: 10px;
+}
+
+.card-info select, .card-info button {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.card-info button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.card-info button:hover {
+    background-color: #0056b3;
+}

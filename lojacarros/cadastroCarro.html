@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Carros</title>
+    <link rel="stylesheet" href="css/padrao.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="container">
+        <form class="formulario-cadastro" action="carros.php" method="post">
+          <h1>Cadastro de carros para venda</h1>
+          <div class="campo-formulario">
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" required>
+          </div>
+          <div class="campo-formulario">
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo" required>
+          </div>
+          <div class="campo-formulario">
+            <label for="ano">Ano:</label>
+            <input type="number" id="ano" name="ano" required>
+          </div>
+          <div class="campo-formulario">
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" name="valor" required>
+          </div>
+          <div class="campo-formulario">
+            <label for="linkImagem">Caminho da imagem:</label>
+            <input type="text" id="linkImagem" name="linkImagem" required>
+          </div>
+          <div class="campo-formulario">
+            <button type="submit" name="cadastrar">Cadastrar carro</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
